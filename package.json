@@ -7,12 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "shai",
-  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/iahs/remote.git"
   },
+  "author": "Shai",
+  "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/iahs/remote/issues"
   }
