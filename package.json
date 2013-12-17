@@ -8,5 +8,12 @@
     "start": "node server.js"
   },
   "author": "shai",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iahs/remote.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iahs/remote/issues"
+  }
 }
