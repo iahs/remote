@@ -17,6 +17,8 @@
     "url": "https://github.com/iahs/remote/issues"
   },
   "dependencies": {
-    "express": "~3.4.7"
+    "express": "~3.4.7",
+    "jade": "~0.35.0",
+    "socket.io": "~0.9.16"
   }
 }
