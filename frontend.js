@@ -17,7 +17,7 @@ app.configure(function() {
 app.get('/', function(req, res){
   res.render('remote.jade');
 });
-server.listen(8080);
+server.listen(process.env.PORT || 5000);
 
 io.sockets.on('connection', function (socket) {
         socket.on('message', function (message) {
