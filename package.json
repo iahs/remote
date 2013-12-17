@@ -1,0 +1,12 @@
+{
+  "name": "remote",
+  "version": "0.0.0",
+  "description": "Control Spotify or iTunes without being on a home network",
+  "main": "frontend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "shai",
+  "license": "BSD-2-Clause"
+}
