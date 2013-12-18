@@ -2,7 +2,7 @@ var socket = io.connect();
 function sendMessage(msg) {
 	if ($('#id').val() != "")
 	{
-		socket.emit('message', $('#id').val().replace(' ','-').replace(/[^a-zA-Z0-9-\.]*/g,"").toLowerCase()+'.local:'+msg);
+		socket.emit('message', $('#id').val().replace(/ /g,'-').replace(/[^a-zA-Z0-9-\.]*/g,"").toLowerCase()+'.local:'+msg);
 	}
 }
 
