@@ -5,7 +5,10 @@ html
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 		script(src="/socket.io/socket.io.js")
 		script(src="remote.js")
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
 	body
 		div.container
 			input(type='text')#id
-			button#playpause Play/Pause
+			button#playpause .btn .btn-primary
+				i.icon-white .icon-play
+				i.icon-white .icon-pause
