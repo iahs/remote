@@ -11,6 +11,7 @@ var express = require('express')
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set("view options", { layout: false });
+app.use(express.favicon(__dirname + '/public/favicon.ico'));
 app.configure(function() {
         app.use(express.static(__dirname + '/public'));
 });
