@@ -8,4 +8,6 @@ function sendMessage(msg) {
 
 $(function() {
 	$("#playpause").click(function() {sendMessage('playpause');});
+	$("#prev").click(function() {sendMessage('previous track');});
+	$("#next").click(function() {sendMessage('next track');});
 });
