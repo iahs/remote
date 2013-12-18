@@ -6,9 +6,28 @@ html
 		script(src="/socket.io/socket.io.js")
 		script(src="remote.js")
 		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		style
+			.container{
+			width: 250px;
+			margin: 10px auto;
+			box-shadow: 10px 10px 5px #AABBBB;
+			border:2px solid black;
+			border-radius:25px;
+			padding: 20px;
+			}
+			.btn-group{
+			padding-top:20px;
+			padding-left:15px;
+			}
 	body
 		div.container
-			input(type='text')#id
-			button#playpause .btn .btn-primary
-				i.icon-white .icon-play
-				i.icon-white .icon-pause
+			input(type='text')#id.form-control
+			div.btn-group.btn-group-lg
+				button#prev.btn.btn-primary
+					span.glyphicon.glyphicon-backward
+				button#playpause.btn.btn-primary
+					span.glyphicon.glyphicon-play
+					span.glyphicon.glyphicon-pause
+				button#next.btn.btn-primary
+					span.glyphicon.glyphicon-forward
