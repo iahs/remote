@@ -1,6 +1,6 @@
 {
   "name": "remote",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Control Spotify or iTunes without being on a home network",
   "main": "frontend.js",
   "scripts": {
