@@ -8,8 +8,8 @@ function sendMessage(msg) {
 
 $(function() {
 	$("#playpause").click(function() {sendMessage('playpause');});
-	$("#prev").click(function() {sendMessage('play (previous track)');});
-	$("#next").click(function() {sendMessage('play (next track)');});
+	$("#prev").click(function() {sendMessage('play previous track');});
+	$("#next").click(function() {sendMessage('play next track');});
 	$('#id').val($.cookie('id'));
 	$('#id').change(function() {$.cookie('id', $('#id').val(), { expires: 90 });});
 });
