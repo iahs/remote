@@ -22,7 +22,9 @@ server.listen(process.env.PORT || 5000);
 io.sockets.on('connection', function (socket) {
         socket.on('message', function (message) {
             var parts = message.toString('utf-8').split(':');
+            console.log("Request from " +parts[0]);
             if (parts[0] in clients) {
+                console.log("Found!");
             clients[parts[0]].emit('cmd',parts[1]);
         }
         });
@@ -30,6 +32,7 @@ io.sockets.on('connection', function (socket) {
             var text = message.toString('utf-8');
             if (text.substring(0,1) == '~') {
                 clients[text.substring(1)] = socket;
+                console.log("Adding client: "+text.substring(1));
             }
         });
 });
