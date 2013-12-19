@@ -12,27 +12,30 @@ html
 		link(rel='apple-touch-icon-precomposed', href='favicon.ico')
 		style
 			*{
-			-webkit-user-select: none;
+			-webkit-user-select:none;
 			}
 			body{
 			background-color:#2F4F4F;
 			}
 			.container{
-			width: 53%;
-			margin: 5%;
+			width:53%;
+			margin:5%;
 			border:2px solid black;
 			border-radius:25px;
-			padding: 5%;
+			padding:5%;
 			background-color:#D3D3D3;
 			}
-			.btn-group{
+			#controls{
 			margin-top:25%;
 			margin-bottom:10%;
+			}
+			#playpause, #down{
+			width:4em;
 			}
 	body
 		div.container
 			input(type='text')#id.form-control.input-sm
-			div.btn-group#controls
+			div#controls
 				button#prev.btn.btn-info
 					span.glyphicon.glyphicon-backward
 				button#playpause.btn.btn-primary
@@ -40,3 +43,10 @@ html
 					span.glyphicon.glyphicon-pause
 				button#next.btn.btn-info
 					span.glyphicon.glyphicon-forward
+				br
+				button#mute.btn.btn-primary
+					span.glyphicon.glyphicon-volume-off
+				button#down.btn.btn-info
+					span.glyphicon.glyphicon-volume-down
+				button#up.btn.btn-primary
+					span.glyphicon.glyphicon-volume-up
