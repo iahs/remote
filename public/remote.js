@@ -1,16 +1,8 @@
 var socket = io.connect();
-function sendMessage(msg) {
-	if ($('#id').val() != "")
-	{
-		socket.emit('message', $('#id').val().replace(/ /g,'-').replace(/[^a-zA-Z0-9-\.]*/g,"").toLowerCase()+'.local:'+msg);
-	}
-}
-
 $(function() {
 	$(document).bind("touchmove", function(e) {e.preventDefault();});
-	$("#playpause").click(function() {sendMessage('playpause');});
-	$("#prev").click(function() {sendMessage('play previous track');});
-	$("#next").click(function() {sendMessage('play next track');});
-	$('#id').val($.cookie('id'));
-	$('#id').change(function() {$.cookie('id', $('#id').val(), { expires: 90 });});
+	$("#controls button").click(function() { if ($('#id').val() != ""){
+		socket.emit('message', $('#id').val().replace(/ /g,'-').replace(/[^a-zA-Z0-9-\.]*/g,"").toLowerCase()+'.local:' + this.id);
+	}});
+	$('#id').change(function() {$.cookie('id', $('#id').val(), { expires: 90 });}).val($.cookie('id'));
 });
