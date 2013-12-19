@@ -1,11 +1,11 @@
-var express = require('express')
-  , app = express()
-  , http = require('http')
-  , server = http.createServer(app)
-  , io = require('socket.io').listen(server)
-  , net = require('net')
-  , sys = require('sys')
-  , jade = require('jade');
+var express = require('express'),
+  app = express(),
+  http = require('http'),
+  server = http.createServer(app),
+  io = require('socket.io').listen(server),
+  net = require('net'),
+  sys = require('sys'),
+  jade = require('jade');
 
     var clients = [];
 app.set('views', __dirname + '/views');
