@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 });
 server.listen(process.env.PORT || 5000);
 io.configure(function () {
-  io.set("transports", ["xhr-polling"]);
+  io.set("transports", ["WebSocket", "xhr-polling"]);
   io.set("polling duration", 10);
 });
 io.sockets.on('connection', function (socket) {
