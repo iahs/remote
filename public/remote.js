@@ -7,6 +7,7 @@ function sendMessage(msg) {
 }
 
 $(function() {
+	$(document).bind("touchstart", function(e) {e.preventDefault();});
 	$("#playpause").click(function() {sendMessage('playpause');});
 	$("#prev").click(function() {sendMessage('play previous track');});
 	$("#next").click(function() {sendMessage('play next track');});
