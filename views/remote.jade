@@ -7,19 +7,19 @@ html
 		script(src="remote.js")
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min.js")
 		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
-		meta(name="viewport", content="width=device-width, initial-scale=1.5, user-scalable=no")
+		meta(name="viewport", content="width=device-width, initial-scale=2.0, user-scalable=no")
 		meta(name='apple-mobile-web-app-capable', content='yes')
 		link(rel='apple-touch-icon-precomposed', href='favicon.ico')
 		style
 			body{
-			background-color:#708090;
+			background-color:#2F4F4F;
 			}
 			.container{
-			width: 60%;
-			margin: 5% 3%;
+			width: 45%;
+			margin: 4% 2.5%;
 			border:2px solid black;
 			border-radius:25px;
-			padding: 5%;
+			padding: 3%;
 			background-color:#B0C4DE;
 			}
 			.btn-group{
@@ -29,10 +29,10 @@ html
 		div.container
 			input(type='text')#id.form-control
 			div.btn-group
-				button#prev.btn.btn-primary
+				button#prev.btn.btn-inverse
 					span.glyphicon.glyphicon-backward
-				button#playpause.btn.btn-primary
+				button#playpause.btn.btn-inverse
 					span.glyphicon.glyphicon-play
 					span.glyphicon.glyphicon-pause
-				button#next.btn.btn-primary
+				button#next.btn.btn-inverse
 					span.glyphicon.glyphicon-forward
