@@ -19,7 +19,6 @@ app.get('/', function(req, res){
   res.render('remote.jade');
 });
 server.listen(process.env.PORT || 5000);
-
 io.configure(function () {
   io.set("transports", ['WebSocket', 'xhr-polling']);
   io.set('rememberTransport', false);
