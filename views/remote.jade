@@ -7,34 +7,41 @@ html
 		script(src="remote.js")
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min.js")
 		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
-		meta(name="viewport", content="width=device-width, initial-scale=2.0, user-scalable=no")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
 		meta(name='apple-mobile-web-app-capable', content='yes')
 		link(rel='apple-touch-icon-precomposed', href='favicon.ico')
 		style
-			*{
+			*:not(input){
 			-webkit-user-select:none;
 			}
 			body{
 			background-color:#2F4F4F;
 			}
 			.container{
-			width:53%;
 			margin:5%;
-			border:2px solid black;
+			border:2px solid #000;
 			border-radius:25px;
-			padding:5%;
-			background-color:#D3D3D3;
+			padding:10%;
+			background-color:#D3D3D3
 			}
 			#controls{
-			margin-top:25%;
-			margin-bottom:10%;
+			margin-top:20%;
+			margin-bottom:5%;
+			text-align:center;
 			}
-			#playpause, #down{
-			width:4em;
+			.btn{
+			width:30%;
+			}
+			#down, #playpause{
+			width:40%
+			}
+			.glyphicon{
+			font-size:2em;
+			line-height:1.8;
 			}
 	body
 		div.container
-			input(type='text')#id.form-control.input-sm
+			input(type='text')#id.form-control
 			div#controls
 				button#prev.btn.btn-info
 					span.glyphicon.glyphicon-backward
